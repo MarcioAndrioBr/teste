@@ -21,6 +21,7 @@ body {
     padding: 10px 20px;
     position: sticky;
     top: 0;
+    width: 100%;
     background-color: transparent;
     z-index: 1000;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -357,25 +358,39 @@ form button:hover {
 
     .cabecalho {
         flex-direction: column;
-        padding: 10px;
+        padding: 5px 10px;
+        position: fixed; /* Mudando para fixed para garantir que fique no topo */
+        top: 0;
+        width: 100%;
+        background-color: rgba(236, 229, 229, 0.95); /* Fundo sólido desde o início no mobile */
+        box-shadow: 0px 4px 6px rgba(10, 10, 10, 0.3);
+    }
+
+    .cabecalho.solid {
+        background-color: rgba(236, 229, 229, 0.95); /* Mantém o fundo sólido */
     }
 
     .cabecalho-imagem {
         height: 24px;
+        margin-bottom: 5px;
     }
 
     .cabecalho-menu {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px; /* Reduzindo o espaço entre os itens */
+        width: 100%;
+        text-align: center;
     }
 
     .cabecalho-menu-item {
-        font-size: 16px;
+        font-size: 14px; /* Reduzindo o tamanho da fonte para melhor ajuste */
+        padding: 5px 0;
     }
 
     .home {
         flex-direction: column;
-        padding: 20px;
+        padding: 80px 20px 20px; /* Aumentando o padding-top para evitar sobreposição com o cabeçalho */
+        min-height: auto; /* Removendo min-height para evitar empurrar o conteúdo para baixo */
     }
 
     .home-escrito-titulo {

@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Sarala', sans-serif;
+    color: #333;
+    background: url('img/fundodesktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cabecalho.solid {
+    background-color: rgba(236, 229, 229, 0.95);
+    box-shadow: 0px 4px 6px rgba(10, 10, 10, 0.3);
+}
+
+.cabecalho-imagem {
+    height: 72px;
+    filter: drop-shadow(4px 4px 3px rgba(255, 255, 255, 1));
+}
+
+.cabecalho-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    color: #0b0b0b;
+    font-weight: 400;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+}
+
+.cabecalho-menu-item:hover {
+    text-decoration: underline;
+}
+
+/* Home */
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+.home-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.home-escrito-titulo {
+    font-weight: 700;
+    font-size: 64px;
+    color: #fbf8f8;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+.home-escrito-subtitulo {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fbf8f8;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+    max-width: 600px;
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    background-color: #33a85e;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    max-width: 200px;
+}
+
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #2b8f4e;
+}
+
+.home-imagem {
+    height: 200px;
+    filter: invert(1) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.9));
+}
+
+/* Sobre */
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 50px 20px;
+    background-color: rgba(215, 209, 209, 0.95);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.texto-sobre {
+    text-align: left;
+    max-width: 600px;
+}
+
+.texto-sobre-titulo {
+    font-size: 64px;
+    font-weight: bold;
+    color: #0b0b0b;
+    margin-bottom: 20px;
+}
+
+.texto-sobre-subtitulo {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0b0b0b;
+    margin-bottom: 15px;
+}
+
+.imgagem-sobre img {
+    max-width: 100%;
+    height: auto;
+    width: 800px;
+    border-radius: 10px;
+}
+
+/* Serviços */
+.servico {
+    padding: 50px 20px;
+    background-color: rgba(236, 229, 229, 0.95);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.servico-menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    font-size: 43px;
+    color: #0b0b0b;
+    margin-bottom: 30px;
+}
+
+.titulo-servico {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b0b0b;
+    margin-bottom: 10px;
+}
+
+.texto-servico {
+    font-size: 18px;
+    color: #0b0b0b;
+    max-width: 300px;
+}
+
+.caixa-texto-servico, .caixa-titulo-servico {
+    margin: 0 auto;
+    max-width: 330px;
+}
+
+.imagem-servico img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Equipe */
+.equipe {
+    padding: 50px 20px;
+    background-color: rgba(215, 209, 209, 0.95);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.equipe-top {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.imagem-equipe img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.nome-colaborador {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b0b0b;
+    margin-bottom: 5px;
+}
+
+.funcao-colaborador {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0b0b0b;
+    margin-bottom: 10px;
+}
+
+.texto-equipe {
+    font-size: 18px;
+    color: #0b0b0b;
+    max-width: 400px;
+}
+
+/* Depoimentos */
+.depoimentos {
+    padding: 50px 20px;
+    background-color: rgba(236, 229, 229, 0.95);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.depoimentos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.depoimento-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.depoimento-item p {
+    font-size: 18px;
+    color: #0b0b0b;
+    margin-bottom: 10px;
+}
+
+/* Contato */
+.contato {
+    padding: 50px 20px;
+    background-color: rgba(215, 209, 209, 0.95);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Sarala', sans-serif;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    background-color: #33a85e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #2b8f4e;
+}
+
+.contato-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b0b0b;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.icones {
+    width: 20px;
+    margin-right: 10px;
+    filter: invert(1) drop-shadow(4px 4px 2px rgba(0, 0, 0, 1));
+}
+
+/* Footer */
+.rodape {
+    background-color: rgba(50, 43, 43, 0.9);
+    color: #fbf8f8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.titulo-rodape-texto h2 {
+    font-size: 18px;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+}
+
+/* Scroll Margin */
+#home, #sobre, #servico, #equipe, #depoimentos, #contato {
+    scroll-margin-top: 100px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        background: url('img/fundocelular.jpeg') no-repeat center fixed;
+        background-size: cover;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .cabecalho-imagem {
+        height: 24px;
+    }
+
+    .cabecalho-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cabecalho-menu-item {
+        font-size: 16px;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .home-escrito-titulo {
+        font-size: 36px;
+    }
+
+    .home-escrito-subtitulo {
+        font-size: 16px;
+    }
+
+    .whatsapp-button {
+        font-size: 16px;
+        padding: 8px 16px;
+        max-width: 180px;
+    }
+
+    .whatsapp-button img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .home-imagem {
+        height: 150px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .imgagem-sobre img {
+        width: 400px;
+    }
+
+    .texto-sobre-titulo {
+        font-size: 36px;
+    }
+
+    .servico-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imagem-servico img {
+        width: 200px;
+    }
+
+    .equipe-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imagem-equipe img {
+        width: 200px;
+    }
+
+    .depoimentos-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contato-info p {
+        font-size: 16px;
+    }
+}

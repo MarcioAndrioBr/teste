@@ -357,7 +357,7 @@ form button:hover {
     }
 
     .cabecalho {
-        flex-direction: column;
+        flex-direction: row;
         padding: 5px 10px;
         position: fixed; /* Mudando para fixed para garantir que fique no topo */
         top: 0;
@@ -376,7 +376,7 @@ form button:hover {
     }
 
     .cabecalho-menu {
-        flex-direction: column;
+        flex-direction: row;
         gap: 5px; /* Reduzindo o espaço entre os itens */
         width: 100%;
         text-align: center;
